@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- Desktop Icons Area -->
+        <div class="desktop-icons">
+            <div class="desktop-icon">
+                <i class="fas fa-folder fa-3x icon-folder"></i>
+                <span>Documents</span>
+            </div>
+            <div class="desktop-icon">
+                <i class="fas fa-recycle fa-3x icon-recycle"></i>
+                <span>Corbeille</span>
+            </div>
+            <div class="desktop-icon">
+                <i class="fab fa-chrome fa-3x icon-chrome"></i>
+                <span>Navigateur</span>
+            </div>
+            <div class="desktop-icon">
+                <i class="fas fa-file-code fa-3x icon-code"></i>
+                <span>Projets</span>
+            </div>
+        </div>
+
+        <!-- Start Menu -->
+        <div class="start-menu" id="startMenu">
+            <div class="start-menu-content">
+                <div class="start-search">
+                    <input type="text" placeholder="Rechercher des applications, des paramètres et des documents">
+                </div>
+                <div class="pinned-apps">
+                    <h3>Épinglé</h3>
+                    <div class="apps-grid">
+                        <div class="app-item"><i class="fas fa-envelope icon-mail"></i><span>Mail</span></div>
+                        <div class="app-item"><i class="fas fa-calendar-alt icon-calendar"></i><span>Calendrier</span></div>
+                        <div class="app-item"><i class="fas fa-cog icon-settings"></i><span>Paramètres</span></div>
+                        <div class="app-item"><i class="fas fa-calculator icon-calc"></i><span>Calculatrice</span></div>
+                        <div class="app-item"><i class="fas fa-photo-video icon-photos"></i><span>Photos</span></div>
+                        <div class="app-item"><i class="fas fa-store icon-store"></i><span>Microsoft Store</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="start-footer">
+                <div class="user-profile">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Utilisateur</span>
+                </div>
+                <i class="fas fa-power-off"></i>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <div class="taskbar-left">
+                <!-- Weather/Widgets space -->
+            </div>
+            <div class="taskbar-center">
+                <button class="taskbar-btn" id="startButton">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Start" width="24">
+                </button>
+                <button class="taskbar-btn"><i class="fas fa-search icon-search"></i></button>
+                <button class="taskbar-btn"><i class="fas fa-layer-group icon-widgets"></i></button>
+                <button class="taskbar-btn"><i class="fas fa-comments icon-chat"></i></button>
+                <button class="taskbar-btn"><i class="fas fa-folder-open icon-folder"></i></button>
+                <button class="taskbar-btn"><i class="fab fa-edge icon-edge"></i></button>
+            </div>
+            <div class="taskbar-right">
+                <div class="tray-icons">
+                    <i class="fas fa-chevron-up"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <i class="fas fa-battery-three-quarters"></i>
+                </div>
+                <div class="clock" id="clock">
+                    <span id="time">00:00</span>
+                    <span id="date">01/01/2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
