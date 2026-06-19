@@ -279,3 +279,6 @@ body, html {
 /* Couleur du bouton modifiee en bleu */
 
 /* Taille du bouton augmentee de 20px */
+button:hover {
+    opacity: 0.8;
+}
